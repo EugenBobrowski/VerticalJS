@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>equalHeights</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../source/vertical.js"></script>
+
+	<style>
+		.block {
+			float: left;
+			width: 200px;
+			margin: 10px;
+			padding: 10px 20px;
+
+			border: 1px solid #333;
+		}
+
+		.clear {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+
+<div class="block equalHeights">
+	test
+</div>
+
+<div class="block equalHeights">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt, risus ut faucibus pharetra, ante massa mattis leo, n
+</div>
+
+<div class="block equalHeights">
+	In metus eros, fringilla sed tellus vitae, vestibulum condimentum purus. Fusce tempus mi et lectus ornare congue ut in turpis. Nam vel erat nunc. Duis urna dolor, imperdiet ut faucibus ac, porta eu nulla. Fusce laoreet eget felis eget viverra. Vivamu
+</div>
+
+<div class="clear"></div>
+
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	$('.equalHeights').equalHeights({
+		container: 'body',
+	});
+});
+</script>
+</body>
+</html>
