@@ -23,13 +23,13 @@
 				}
 			})
 			.css({
-				'height': currentTallest,
-				'min-height': currentTallest
+				'height': outerTallest,
+				'min-height': outerTallest
 			});
 
 			if (settings.container!=null) {
 				$this.parents(settings.container).css({
-					'height': outerTallest,
+					'height': currentTallest,
 					'min-height': outerTallest
 				});
 			}
